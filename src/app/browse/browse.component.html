@@ -1,0 +1,27 @@
+<!-- <app-cart></app-cart> -->
+<div class="container" *ngIf="!isDetails">
+            <div class="sidebar">
+                <div *ngFor="let filter of filters">
+                    <label>{{filter.name | uppercase}}</label>
+                    <ul>
+                        <li *ngFor="let _value of filter.values"> 
+                            <input type="checkbox" (change)="doFilter(_value,$event.target.checked)">
+                            {{_value}} 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card" *ngFor="let product of products |filterPipe:filterVal">
+                  <a (click)="details(product)"  href="" [routerLink]="['/details']" >  
+                  <img src="./assets/{{product.image}}">
+                    <p>{{product.name}}</p>
+                    <p>{{product.measurement}}</p>
+                    <p>{{product.price}}</p>
+                  </a>
+                    <button class="" (click)="add(product)">Add to cart</button>
+                </div>
+            </div>       
+
+</div> 
+ <!-- <app-details *ngIf="isDetails"></app-details>  -->

@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+/*body{
+    background: #CEE1F3;
+}*/
+.header{
+    height: 50px;
+    background: #9FC5E7;
+    position: relative;
+    .nav{
+            float: right;
+            margin-top: 6px;
+            margin-right: 10px;
+    }
+}
+.btn{
+    width: 80px;
+    padding: 0px;
+    height: 35px;
+    background: #E06666;
+    border: 1px solid black;
+    top: 16%;
+}
+.container{
+    display: flex;
+    background-color:#CEE1F3;
+}
+.sidebar{
+    background-color:#6FA8DC;
+    flex: 2;
+    padding: 15px;
+    ul{
+         padding-left: 15px;
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+    }
+}
+.content{
+    flex:7;
+    column-count: 3;
+    padding: 15px;
+    .card{
+    height: 327px;
+    display: inline-block;
+    background: white;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+            img{
+                margin: 0px auto;
+                display: block;
+            }
+            p{
+                text-align: center;
+                margin: 5px;
+                text-align: center;
+                margin: 5px;
+                min-height: 40px;
+
+            }
+            button{
+                    margin: 0px auto;
+                    display: block;
+                    width: 30%;
+                    padding: 10px;
+                    background: #E06666;
+                    border: 1px solid black;
+                    bottom: 10px;
+                    position: absolute;
+                    right: 33%;
+            }
+            a{
+                text-decoration:none;
+            }
+     }   
+}
+.details{
+        display: flex;
+        width: 80%;
+        margin: 0px auto;
+        h2{
+            text-align: center;
+        }
+        .col{
+            flex:5;
+        }
+        img{
+            width: 100%;
+        }
+}
